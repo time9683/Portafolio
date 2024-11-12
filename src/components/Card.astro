@@ -8,10 +8,7 @@ const {title,tecnologies,url,alt,description,link,live} = Astro.props
 
 <article class="flex gap-4 flex-col">
 
-<div class="w-full">
-  <img src={url} alt={alt} class="h-full object-cover ">
-</div>
-<div>
+
 
   <div class="flex gap-4 flex-col">
 <h3 class="text-white text-xl font-bold text-wrap">{title}</h3>
@@ -23,6 +20,11 @@ const {title,tecnologies,url,alt,description,link,live} = Astro.props
   }
 </ul>
 <p class="text-gray-300 text-wrap.">{description}</p>
+
+<div class="w-full">
+  <img src={url} alt={alt} class="h-full object-cover ">
+</div>
+<div></div>
 </div>
 
 <footer class="mt-4 flex gap-4">
