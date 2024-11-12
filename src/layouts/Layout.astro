@@ -15,6 +15,16 @@ const { title } = Astro.props;
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
+		<!-- add opengraph for whatsapp image -->
+		<meta property="og:image" content="/projects/open.png" />
+		<meta property="og:image:width" content="1200" />
+		<meta property="og:image:height" content="630" />
+		<meta property="og:image:type" content="image/png" />
+		<meta property="og:image:alt" content="Luis Hernandez" />
+		<meta property="og:title" content="Luis Hernandez" />
+		<meta property="og:description" content="Estudiante de ingenieria en Computacion, especializado en el desarrollo de aplicaciones web y  apasicionado por la programacion de bajo nivel." />
+		<meta property="og:url" content="https://luis-hernandez.vercel.app/" />
+		<meta property="og:type" content="website" />
 	</head>
 	<body>
 		<slot />
