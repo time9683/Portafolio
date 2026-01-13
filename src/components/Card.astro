@@ -21,16 +21,20 @@ const {title,tecnologies,url,alt,description,link,live} = Astro.props
 </ul>
 <p class="text-gray-300 text-wrap.">{description}</p>
 
+{ url && (
 <div class="w-full">
   <img src={url} alt={alt} class="h-full object-cover ">
 </div>
+)}
 <div></div>
 </div>
 
 <footer class="mt-4 flex gap-4">
-  <a href={link} 
-  target="_blank" rel="noopener noreferrer"
-  class="py-1 px-2 bg-blue-800/80 text-white rounded-sm cursor-pointer  hover:bg-blue-800 transition-colors">Github</a>
+  { link && (
+    <a href={link} 
+    target="_blank" rel="noopener noreferrer"
+    class="py-1 px-2 bg-blue-800/80 text-white rounded-sm cursor-pointer  hover:bg-blue-800 transition-colors">Github</a>
+  )}
   { live && (
     <a href={live} 
     target="_blank" rel="noopener noreferrer"
